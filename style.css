@@ -143,6 +143,7 @@ section:nth-child(2n+1) {
     width: auto;
     padding: 20px 10px 10px;
     font-weight: 400;
+    
 }
 
 .section-heading span {
@@ -223,8 +224,8 @@ section:nth-child(2n+1) {
     background-color: orangered;
 }
 
-.eighty-five-percentage {
-    width: 85%;
+.forty-five-percentage {
+    width: 45%;
     height: inherit;
 }
 
@@ -276,18 +277,18 @@ section:nth-child(2n+1) {
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 0 50px;
+    padding: 0 0px;
     margin-bottom: 20px;
 }
 
 .portfolio-image-container {
-    max-width: 300px;
+    max-width: 3000px;
     margin: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    /* height: 300px; */
     overflow: hidden;
+    box-shadow: 0 0 20px #74ADC8;
 }
 
 .portfolio-image-container img {
@@ -308,12 +309,14 @@ section:nth-child(2n+1) {
 
 .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
+    width: 100%;
+    height: 100%;
 }
 
-.portfolio-image-container:hover .portfolio-details {
+/* .portfolio-image-container:hover .portfolio-details {
     background-color: #80808078;
     color: white;
-}
+} */
 
 
 /* Contact Section */
@@ -491,6 +494,7 @@ button:focus {
 
 .timeline-container {
     padding: 8px;
+    
 }
 
 .timeline-logo {
@@ -509,7 +513,7 @@ button:focus {
 }
 
 .experience-company-name {
-    margin: 5px 0 0;
+    margin: 5px 0;
     color: #eb822d;
     font-weight: 400;
     font-size: 1.2rem;
@@ -531,6 +535,88 @@ button:focus {
 
 .text-align-justify {
     text-align: justify;
+}
+
+/*Achievements*/
+.achievements {
+    position: relative;
+    width: 75%;
+    text-align: center;
+}
+
+.achievements-box {
+    padding: 1px;
+    min-height: 70px;
+    position: relative;
+    margin-right: 10%;
+    left: 5%;
+ 
+}
+
+/* .achievements-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+/* .achievements-box:nth-child(2n) {
+    left: 53%;
+}
+
+.achievements-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.achievements-box:nth-child(2n)::after {
+    left: -9%;
+} */
+
+
+/* .achievements-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 1px dashed #0096fa6b;
+    left: 50%;
+    top: 8%;
+} */
+
+
+/* .achievements-traveller {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+    z-index: 2;
+} */
+
+/* .achievements-divider i {
+    color: #2857a4;
+} */
+
+.achievements-container {
+    width: 100%
+}
+.achievements-company-name {
+    margin : 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+.achievements-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.achievements-logo > img {
+    width: 100%;
 }
 
 
